@@ -15,7 +15,7 @@
 docker pull [도커이미지]:[태그]
 ```
 
-ex) docker pull nginx:1.23.1-alpine
+`ex) docker pull nginx:1.23.1-alpine`
 
 태그는 보통 버전을 작성함
 
@@ -31,7 +31,7 @@ docker images
 docker run -d -p 8001:8000 --name=webserver [pull 받은 이미지]
 ```
 
-ex) docker run -d -p 8001:8000 --name=webserver nginx:1.23.1-alpine
+`ex) docker run -d -p 8001:8000 --name=webserver nginx:1.23.1-alpine`
 
 옵션
 

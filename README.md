@@ -63,3 +63,7 @@ docker stop [컨테이너 이름]
 ```bash
 docker rm [컨테이너 이름]
 ```
+
+#### 컨테이너 실행 유지 및 빠져나오기
+
+exit 명령어를 사용하면 컨테이너가 중단되기 때문에 escape sequences (Cntl + C + Q) 단축키를 사용한다

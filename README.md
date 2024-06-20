@@ -72,3 +72,13 @@ docker rm [컨테이너 이름]
 #### 컨테이너 실행 유지 및 빠져나오기
 
 exit 명령어를 사용하면 컨테이너가 중단되기 때문에 escape sequences (Ctrl + C + Q) 단축키를 사용한다
+
+#### Docker Proxy
+
+```bash
+docker instpect [컨테이너 이름] | grep -i ipa
+```
+
+`NAT(Network Address Translation)` : 포트포워딩 수행시 IP, Port를 바꾸는 역할
+
+`NAPT(Network Address Port Translation)` : IP 주소의 변환과 동시에 포트번호로 변환하는 것

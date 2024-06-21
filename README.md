@@ -30,6 +30,14 @@ docker pull [도커이미지]:[태그]
 docker images
 ```
 
+#### Docker 이미지 삭제
+
+`docker images` 명령어로 이미지 확인
+
+```bash
+docker rmi [이미지 ID]
+```
+
 #### Docker 이미지를 컨테이너로 띄우는 명령어
 
 ```bash

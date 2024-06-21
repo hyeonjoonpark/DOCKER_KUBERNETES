@@ -38,6 +38,10 @@ docker images
 docker rmi [이미지 ID]
 ```
 
+_Option_
+
+`-f` : 강제삭제
+
 #### Docker 이미지를 컨테이너로 띄우는 명령어
 
 ```bash

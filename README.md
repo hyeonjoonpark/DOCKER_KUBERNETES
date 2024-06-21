@@ -79,6 +79,6 @@ exit 명령어를 사용하면 컨테이너가 중단되기 때문에 escape seq
 docker instpect [컨테이너 이름] | grep -i ipa
 ```
 
-`NAT(Network Address Translation)` : 포트포워딩 수행시 IP, Port를 바꾸는 역할
+`NAT(Network Address Translation)` : 사설 IP주소를 공인 IP주소로 바꿔주는 주소변환 방식
 
 `NAPT(Network Address Port Translation)` : IP 주소의 변환과 동시에 포트번호로 변환하는 것

@@ -9,6 +9,7 @@
 1. 컨테이너 기술
 2. PWD(Play With Docker)
 3. 웹서버(Nginx)
+4. DB 컨테이너
 
 ---
 

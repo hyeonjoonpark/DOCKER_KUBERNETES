@@ -225,3 +225,20 @@ USER hyeonjoonpark
 ```Dockerfile
 WORKDIR /workspace
 ```
+
+---
+
+`ARG` 명령어
+
+- docker build 시점에서 변수 값을 전달하기 위해 "--build-arg=인자" 를 정의하여 사용한다.
+
+사용방법)
+
+```Dockerfile
+ARG db_name
+```
+
+Dockerfile에 ARG 변수를 정의하고
+`docker build --build-arg db_name=my_db`
+
+---

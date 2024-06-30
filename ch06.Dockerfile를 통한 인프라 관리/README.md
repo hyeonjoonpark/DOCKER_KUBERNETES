@@ -160,4 +160,36 @@ COPY ./app
 ```Dockerfile
 ADD index.html /usr/share/nginx/html
 ADD website.tar.gz /var/www/html
+ADD http://example.com/view/customer.tar.gz /workspace/data/
 ```
+
+---
+
+`ENV` 명령어
+
+- 이미지 안에 각종 환경변수를 지정하는 경우 사용한다
+
+```Dockerfile
+ENV JAVA_HOME=/usr/lib/jvm/java-17-oracle
+ENV PATH /usr/local/nginx/bin:$PATH
+```
+
+---
+
+`EXPOSE` 명령어
+
+- 컨테이너가 호스트 네트워크를 통해 들어오는 트래픽을 리스닝하는 포트와 프로토콜을 지정하기 위해 사용한다.
+
+- Nginx와 Apache는 기본적으로 80, 443을 사용
+
+- 이미지 내에서 애플리케이션이 사용하는 포트를 사전에 확인하고 호스트와 연결되도록 구성하는 경우 설정하고 `docker run` 명령 사용시 `-p` 옵션을 통해 사용된다.
+
+```Dockerfile
+EXPOSE 80
+
+또는
+
+EXPOSE 80/tcp
+```
+
+---

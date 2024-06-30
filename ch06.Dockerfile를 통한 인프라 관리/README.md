@@ -193,3 +193,35 @@ EXPOSE 80/tcp
 ```
 
 ---
+
+`VOLUME` 명령어
+
+- 볼륨을 이미지 빌드에 미리 설정하는 경우 작성한다.
+
+예시)
+
+```Dockerfile
+VOLUME /var/log
+```
+
+---
+
+`USER` 명령어
+
+- 컨테이너의 기본 사용자는 root 이다.
+
+```Dockerfile
+USER hyeonjoonpark
+```
+
+---
+
+`WORKDIR` 명령어
+
+- 컨테이너 상에서 작업할 경로(디렉토리) 전환을 위해 작성한다.
+- WORKDIR을 작성하면 RUN, CMD, ENTRYPOINT, COPY, ADD 명령문은 해당 디렉토리 기준으로 작성한다.
+- 지정한 경로가 없으면 자동 생성되고, 컨테이너 실행 이후 컨테이너의 접속 `docker exec -it my_container bash` 하면 지정한 경로로 연결된다
+
+```Dockerfile
+WORKDIR /workspace
+```

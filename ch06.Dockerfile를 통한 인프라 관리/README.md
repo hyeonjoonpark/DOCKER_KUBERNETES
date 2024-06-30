@@ -150,3 +150,14 @@ COPY ./app
 ---
 
 `ADD` 명령어
+
+- 호스트 환경의 파일, 디렉토리를 이미지 안에 복사하는 것 뿐만 아니라, URL 주소에서 직접 다운로드 하여 이미지에 넣을 수도 있다.
+- 압축파일(tar, tar.gz) 인 경우에는 지정된 경로에 압축을 풀어서 추가한다.
+- 디렉토리 추가 시에는 /로 끝나야 한다.
+
+사용방법)
+
+```Dockerfile
+ADD index.html /usr/share/nginx/html
+ADD website.tar.gz /var/www/html
+```

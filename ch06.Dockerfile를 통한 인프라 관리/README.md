@@ -230,7 +230,7 @@ WORKDIR /workspace
 
 `ARG` 명령어
 
-- docker build 시점에서 변수 값을 전달하기 위해 "--build-arg=인자" 를 정의하여 사용한다
+- docker build 시점에서 변수 값을 전달하기 위해 "--build-arg=인자" 를 정의하여 사용한다.
 
 사용방법)
 

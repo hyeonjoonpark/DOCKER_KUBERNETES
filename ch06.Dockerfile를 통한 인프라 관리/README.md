@@ -238,7 +238,10 @@ WORKDIR /workspace
 ARG db_name
 ```
 
-Dockerfile에 ARG 변수를 정의하고
-`docker build --build-arg db_name=my_db`
+Dockerfile에 ARG 변수를 정의하고 도커 빌드 시 변수값을 저장하면 이미지 내부로 인자가 전달된다
+
+```bash
+docker build --build-arg db_name=my_db
+```
 
 ---

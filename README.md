@@ -10,6 +10,10 @@
 2. PWD(Play With Docker)
 3. 웹서버(Nginx)
 4. DB 컨테이너
+5. Portainer
+6. Dockerfile를 통한 인프라 관리
+7. Dockerfile build
+8. docker-compose
 
 ---
 

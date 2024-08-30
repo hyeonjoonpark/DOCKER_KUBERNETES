@@ -40,7 +40,7 @@ mysql:8.0-debian
 ```
 
 ```bash
-# 두번째 wordpress 컨테이너를 첫번째 컨테이너와 연결하고 생성한다
+# 두번째 wordpress 컨테이너를 첫번째 컨테이너와 연결하고 생성한다.
 docker run -itd \
 --name wordpress_app \
 -v myweb_data:/var/www/html \
